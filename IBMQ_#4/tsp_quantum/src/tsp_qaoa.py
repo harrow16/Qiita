@@ -30,7 +30,7 @@ from qiskit_algorithms.optimizers import COBYLA
 from qiskit_optimization.algorithms import MinimumEigenOptimizer
 
 # IBM Quantum (Runtime)
-from qiskit_ibm_runtime import QiskitRuntimeService, Session, SamplerV2 as Sampler
+from qiskit_ibm_runtime import QiskitRuntimeService, SamplerV2 as Sampler
 
 
 # ============================================================
@@ -207,7 +207,7 @@ def select_least_busy_backend(min_qubits: int = 16, api_key: str | None = None) 
     Returns:
         選択されたバックエンド名
     """
-    service = QiskitRuntimeService(channel="ibm_quantum", token=api_key) if api_key else QiskitRuntimeService()
+    service = QiskitRuntimeService(channel="ibm_quantum_platform", token=api_key) if api_key else QiskitRuntimeService()
 
     candidates = [
         b for b in service.backends(simulator=False, operational=True)
@@ -238,6 +238,33 @@ def select_least_busy_backend(min_qubits: int = 16, api_key: str | None = None) 
 # 6. IBM Quantum 実機ソルバー
 # ============================================================
 
+class _TranspilingSampler:
+    """
+    qiskit_algorithms の QAOA が要求する Sampler インターフェースに準拠しつつ、
+    実機投入前に generate_preset_pass_manager でトランスパイルを行うラッパー。
+    """
+
+    def __init__(self, backend, shots: int):
+        from qiskit_ibm_runtime import SamplerOptions
+        options = SamplerOptions()
+        options.default_shots = shots
+        self._inner = Sampler(backend, options=options)
+        self._backend = backend
+
+    def run(self, circuits, **kwargs):
+        from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
+        pm = generate_preset_pass_manager(optimization_level=1, backend=self._backend)
+        # circuits は QuantumCircuit のリスト、または (circuit, params, ...) の PUB タプルのリスト
+        transpiled = []
+        for item in circuits:
+            if isinstance(item, tuple):
+                # PUB 形式: 先頭要素だけトランスパイルして残りはそのまま
+                transpiled.append((pm.run(item[0]),) + item[1:])
+            else:
+                transpiled.append(pm.run(item))
+        return self._inner.run(transpiled, **kwargs)
+
+
 def solve_qaoa_ibmq(
     qp: QuadraticProgram,
     reps: int = 1,
@@ -262,19 +289,18 @@ def solve_qaoa_ibmq(
     from qiskit_algorithms.minimum_eigensolvers import QAOA as QAOASolver
 
     backend_name = select_least_busy_backend(min_qubits=min_qubits, api_key=api_key)
-    service = QiskitRuntimeService(channel="ibm_quantum", token=api_key) if api_key else QiskitRuntimeService()
+    service = QiskitRuntimeService(channel="ibm_quantum_platform", token=api_key) if api_key else QiskitRuntimeService()
     backend = service.backend(backend_name)
 
     converter = QuadraticProgramToQubo()
     qubo = converter.convert(qp)
 
-    with Session(backend=backend) as session:
-        sampler = Sampler(session=session, options={"shots": shots})
-        optimizer = COBYLA(maxiter=100)
-        qaoa = QAOASolver(sampler=sampler, optimizer=optimizer, reps=reps)
+    sampler = _TranspilingSampler(backend, shots=shots)
+    optimizer = COBYLA(maxiter=100)
+    qaoa = QAOASolver(sampler=sampler, optimizer=optimizer, reps=reps)
 
-        eigen_optimizer = MinimumEigenOptimizer(qaoa)
-        result = eigen_optimizer.solve(qubo)
+    eigen_optimizer = MinimumEigenOptimizer(qaoa)
+    result = eigen_optimizer.solve(qubo)
 
     return {
         "method": f"QAOA IBM Quantum ({backend_name}, reps={reps})",

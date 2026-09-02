@@ -32,20 +32,11 @@ tsp_quantum/
 pip install -r requirements.txt
 ```
 
-### 2. IBM Quantum API Key の設定
+### 2. IBM Quantum API Key の取得
 
 [IBM Quantum Platform](https://quantum.ibm.com/) でアカウントを作成し、API Key を取得してください。
 
-```bash
-# 初回のみ実行 (~/.qiskit/qiskit-ibm.json に保存される)
-python src/ibmq_setup.py <YOUR_API_KEY>
-
-# 接続確認
-python src/ibmq_setup.py check
-
-# 利用可能なバックエンド一覧
-python src/ibmq_setup.py list
-```
+実行時に `--api-key` 引数で直接渡します（ファイルへの保存は不要）。
 
 ---
 
