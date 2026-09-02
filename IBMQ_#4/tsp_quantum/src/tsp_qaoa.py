@@ -138,7 +138,20 @@ def build_tsp_qubo(dist_matrix: np.ndarray, penalty: float = 10.0) -> QuadraticP
 # ============================================================
 
 def solve_classical(qp: QuadraticProgram) -> dict:
-    """NumPy 固有値ソルバーで厳密解を求める (小規模向け)。"""
+    """
+    NumPy 固有値ソルバーで QUBO の厳密解を求める (ベースライン用・小規模向け)。
+
+    QUBO ハミルトニアンを密行列として展開し、全固有値・固有ベクトルを NumPy で
+    計算して最小固有値に対応する解ビット列を返す。総当たりに相当するため
+    都市数が増えると指数的に遅くなるが、4都市程度では一瞬で厳密解が得られる。
+    QAOA の解が正しいかどうかを検証するためのベースラインとして使用する。
+
+    Args:
+        qp: 解く QuadraticProgram (QUBO 変換前の問題)
+
+    Returns:
+        結果辞書 {"method", "fval", "x", "status"}
+    """
     converter = QuadraticProgramToQubo()
     qubo = converter.convert(qp)
 
