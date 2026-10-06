@@ -15,9 +15,9 @@ IBMQ_#5/
 │   ├── h2_simulation.py   # シミュレーション版（PEC 計算）
 │   └── h2_realdevice.py   # IBM Quantum 実機版
 ├── results/               # 計算結果（CSV・PNG）出力先
-├── .env                   # API キー（★ GitHub に上げないこと）
+├── run_simulation.bat
+├── run_realdevice.bat
 ├── .env.example           # API キーのテンプレート
-├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
