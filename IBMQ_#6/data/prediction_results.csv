@@ -1,0 +1,120 @@
+Ticker,Current_Price,Predicted_Return,Sector,Name
+6976.T,4160.0,0.029916368057598862,Technology,"Taiyo Yuden Co., Ltd."
+1605.T,4687.0,0.027655653000458576,Energy,Inpex Corporation
+9501.T,623.4,0.027292516561146053,Utilities,"Tokyo Electric Power Company Holdings, Incorporated"
+4005.T,507.4,0.027134979857798596,Basic Materials,"Sumitomo Chemical Company, Limited"
+5713.T,9337.0,0.026713325520869816,Basic Materials,"Sumitomo Metal Mining Co., Ltd."
+5714.T,9466.0,0.024739850426463355,Basic Materials,"Dowa Holdings Co., Ltd."
+8031.T,6390.0,0.024716528448105606,Industrials,"Mitsui & Co., Ltd."
+8002.T,5661.0,0.023446287729836864,Industrials,Marubeni Corporation
+9503.T,2630.0,0.023310301234275244,Utilities,"The Kansai Electric Power Company, Incorporated"
+5020.T,1402.0,0.022429086840448993,Energy,"ENEOS Holdings, Inc."
+8411.T,6368.0,0.020630988799329553,Financial Services,"Mizuho Financial Group, Inc."
+7011.T,4511.0,0.018890685258464338,Industrials,"Mitsubishi Heavy Industries, Ltd."
+6981.T,3723.0,0.018012654210771417,Technology,"Murata Manufacturing Co., Ltd."
+8058.T,5655.0,0.01798662935226379,Industrials,Mitsubishi Corporation
+4188.T,932.5,0.01741158705205548,Basic Materials,Mitsubishi Chemical Group Corporation
+9697.T,3305.0,0.017266001572228136,Communication Services,"Capcom Co., Ltd."
+9502.T,2596.0,0.017028525178410095,Utilities,"Chubu Electric Power Company, Incorporated"
+9104.T,6862.0,0.01638515209083197,Industrials,"Mitsui O.S.K. Lines, Ltd."
+2413.T,1588.0,0.014654303393274365,Healthcare,"M3, Inc."
+6146.T,67490.0,0.013956192720488167,Technology,Disco Corporation
+9531.T,7636.0,0.01392421052849365,Utilities,"Tokyo Gas Co.,Ltd."
+9101.T,5785.0,0.013908429362522894,Industrials,Nippon Yusen Kabushiki Kaisha
+2801.T,1414.0,0.013800038569802577,Consumer Defensive,Kikkoman Corporation
+9201.T,2676.0,0.013782536838331411,Industrials,"Japan Airlines Co., Ltd."
+9984.T,3822.0,0.013496885187138982,Communication Services,SoftBank Group Corp.
+6758.T,3218.0,0.01325525655623393,Technology,Sony Group Corporation
+3659.T,2919.0,0.013232355690490328,Communication Services,"NEXON Co., Ltd."
+6762.T,2096.5,0.013138961912774673,Technology,TDK Corporation
+6857.T,22965.0,0.012846383759938778,Technology,Advantest Corporation
+3861.T,861.1,0.01240181220957202,Basic Materials,Oji Holdings Corporation
+8053.T,5887.0,0.01189952315270332,Industrials,Sumitomo Corporation
+6098.T,6399.0,0.0117687203369543,Communication Services,"Recruit Holdings Co., Ltd."
+4324.T,2703.0,0.01175485543120441,Communication Services,Dentsu Group Inc.
+1801.T,16640.0,0.011597923009745447,Industrials,Taisei Corporation
+3863.T,1246.0,0.011332688512141554,Basic Materials,"Nippon Paper Industries Co., Ltd."
+6963.T,3376.0,0.011242865716520091,Technology,"ROHM Co., Ltd."
+4751.T,1370.5,0.011181975281218393,Communication Services,"CyberAgent, Inc."
+6501.T,4779.0,0.011058810046085365,Industrials,"Hitachi, Ltd."
+9983.T,61870.0,0.010986671415238725,Consumer Cyclical,"Fast Retailing Co., Ltd."
+4063.T,6291.0,0.01090443733451783,Basic Materials,"Shin-Etsu Chemical Co., Ltd."
+2269.T,3915.0,0.010848968496227861,Consumer Defensive,"Meiji Holdings Co., Ltd."
+6702.T,3261.0,0.010670293876739291,Technology,Fujitsu Limited
+4183.T,1936.5,0.010637992370920911,Basic Materials,"Mitsui Chemicals, Inc."
+8725.T,4151.0,0.010623022457238169,Financial Services,"MS&AD Insurance Group Holdings, Inc."
+7752.T,1350.0,0.010584834539801035,Industrials,"Ricoh Company, Ltd."
+2282.T,6939.0,0.010478677253821645,Consumer Defensive,NH Foods Ltd.
+6752.T,2694.0,0.0103003725683774,Technology,Panasonic Holdings Corporation
+4568.T,2874.5,0.010224742329810216,Healthcare,"Daiichi Sankyo Company, Limited"
+4502.T,5789.0,0.01014299939752553,Healthcare,Takeda Pharmaceutical Company Limited
+4503.T,2535.0,0.010102020987913261,Healthcare,Astellas Pharma Inc.
+6503.T,5456.0,0.009949669704225327,Industrials,Mitsubishi Electric Corporation
+9020.T,3647.0,0.009778447184873407,Industrials,East Japan Railway Company
+7731.T,1956.0,0.009675164267363586,Consumer Cyclical,Nikon Corporation
+6965.T,2000.0,0.009349057910887458,Technology,Hamamatsu Photonics K.K.
+7453.T,3407.0,0.009113707254595692,Consumer Cyclical,"Ryohin Keikaku Co., Ltd."
+6723.T,2389.5,0.00895237438985852,Technology,Renesas Electronics Corporation
+8267.T,1902.5,0.008923392559660645,Consumer Cyclical,"Aeon Co., Ltd."
+8306.T,2700.5,0.008809128863580871,Financial Services,"Mitsubishi UFJ Financial Group, Inc."
+2914.T,5983.0,0.008652614163463353,Consumer Defensive,Japan Tobacco Inc.
+6920.T,34570.0,0.008652389159235769,Technology,Lasertec Corporation
+4911.T,3025.0,0.008622835057270628,Consumer Defensive,"Shiseido Company, Limited"
+9843.T,2627.5,0.008549694856421394,Consumer Cyclical,"Nitori Holdings Co., Ltd."
+4543.T,2094.0,0.008445988669122155,Healthcare,Terumo Corporation
+9602.T,1628.5,0.00831766257494931,Communication Services,"Toho Co., Ltd."
+9532.T,6383.0,0.008174233968921031,Utilities,"Osaka Gas Co., Ltd."
+2502.T,1553.5,0.008120154577040382,Consumer Defensive,"Asahi Group Holdings, Ltd."
+2501.T,1651.5,0.0077122340108984125,Consumer Defensive,Sapporo Holdings Limited
+4452.T,6030.0,0.0076975026508704116,Consumer Defensive,Kao Corporation
+2871.T,1945.5,0.007645883317947013,Consumer Defensive,Nichirei Corporation
+4578.T,11090.0,0.007617445857483945,Healthcare,"Otsuka Holdings Co., Ltd."
+2503.T,2471.5,0.007564174855316361,Consumer Defensive,"Kirin Holdings Company, Limited"
+5411.T,1883.0,0.007482027839601195,Basic Materials,"JFE Holdings, Inc."
+1925.T,5055.0,0.007378820167336941,Real Estate,"Daiwa House Industry Co., Ltd."
+7741.T,28090.0,0.007345673425244299,Healthcare,HOYA Corporation
+4755.T,744.3,0.007116040905363998,Consumer Cyclical,"Rakuten Group, Inc."
+9021.T,3202.0,0.006998007730211227,Industrials,West Japan Railway Company
+7267.T,1320.0,0.006924416376217562,Consumer Cyclical,"Honda Motor Co., Ltd."
+4523.T,4922.0,0.006426619990282852,Healthcare,"Eisai Co., Ltd."
+6861.T,57730.0,0.00641600738963668,Technology,Keyence Corporation
+9022.T,4233.0,0.006193035128498803,Industrials,Central Japan Railway Company
+3402.T,1119.0,0.00597187057572396,Consumer Cyclical,"Toray Industries, Inc."
+8001.T,2062.0,0.00590751201142212,Industrials,ITOCHU Corporation
+8601.T,1565.5,0.005901272190399848,Financial Services,Daiwa Securities Group Inc.
+3382.T,2100.5,0.005886703304946128,Consumer Defensive,"Seven & i Holdings Co., Ltd."
+7269.T,1945.5,0.005874107950073371,Consumer Cyclical,Suzuki Motor Corporation
+6902.T,1944.5,0.005834938364078534,Consumer Cyclical,DENSO Corporation
+8604.T,1257.5,0.005666827268918564,Financial Services,"Nomura Holdings, Inc."
+7270.T,2592.0,0.005376470826040182,Consumer Cyclical,Subaru Corporation
+7203.T,3388.0,0.005376470826040182,Consumer Cyclical,Toyota Motor Corporation
+3086.T,2427.0,0.005353461253158566,Consumer Cyclical,"J. Front Retailing Co., Ltd."
+9434.T,219.1,0.005252364349507147,Communication Services,SoftBank Corp.
+7733.T,1432.0,0.005138074363086071,Healthcare,Olympus Corporation
+8591.T,4768.0,0.00495071445949723,Financial Services,ORIX Corporation
+2802.T,4514.0,0.004880934605965049,Consumer Defensive,"Ajinomoto Co., Inc."
+5401.T,596.0,0.004792910249713949,Basic Materials,Nippon Steel Corporation
+9432.T,158.8,0.004682124552997188,Communication Services,"NTT, Inc."
+7259.T,2270.0,0.004636478795733455,Consumer Cyclical,Aisin Corporation
+9433.T,2710.0,0.004547623955983868,Communication Services,KDDI Corporation
+7211.T,341.2,0.004541770743186164,Consumer Cyclical,Mitsubishi Motors Corporation
+9202.T,2988.0,0.00422908074202027,Industrials,ANA Holdings Inc.
+1802.T,3919.0,0.00386241883337191,Industrials,Obayashi Corporation
+7751.T,4398.0,0.0038441122168643414,Technology,Canon Inc.
+8830.T,4587.0,0.003833490744847931,Real Estate,"Sumitomo Realty & Development Co., Ltd."
+7974.T,8990.0,0.0035074938196354728,Communication Services,"Nintendo Co., Ltd."
+6954.T,5840.0,0.0033817715120407267,Industrials,Fanuc Corporation
+7201.T,352.0,0.003001263123338027,Consumer Cyclical,"Nissan Motor Co., Ltd."
+8316.T,5246.0,0.002494877887360791,Financial Services,"Sumitomo Mitsui Financial Group, Inc."
+4507.T,3457.0,0.0020103416327541656,Healthcare,"Shionogi & Co., Ltd."
+6971.T,2437.0,0.0019098819809069177,Industrials,Kyocera Corporation
+8750.T,1438.0,0.0014599950949300226,Financial Services,"Dai-ichi Life Holdings, Inc."
+3401.T,1604.0,0.0008173196622084009,Industrials,Teijin Limited
+8035.T,40530.0,0.00014689993263555408,Technology,Tokyo Electron Limited
+8801.T,1733.0,-0.004058879781812014,Real Estate,"Mitsui Fudosan Co., Ltd."
+8802.T,4528.0,-0.0048346753131415145,Real Estate,"Mitsubishi Estate Co., Ltd."
+1803.T,2929.5,-0.011725281304986405,Industrials,Shimizu Corporation
+7012.T,3061.0,-0.01289782400811889,Industrials,"Kawasaki Heavy Industries, Ltd."
+4519.T,8451.0,-0.014297815880518124,Healthcare,"Chugai Pharmaceutical Co., Ltd."
+8766.T,7587.0,-0.016085079291167717,Financial Services,"Tokio Marine Holdings, Inc."
+6301.T,6434.0,-0.019604698364858255,Industrials,Komatsu Ltd.

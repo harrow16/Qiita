@@ -1,0 +1,13 @@
+# 量子ポートフォリオ最適化 — 依存パッケージ
+
+# 量子計算
+qiskit>=2.0.0
+qiskit-optimization>=0.7.0
+qiskit-algorithms>=0.4.0
+qiskit-aer>=0.17.0
+
+# 株価予測（LightGBM モデルを再実行する場合に必要）
+# lightgbm>=4.0.0
+# pandas>=2.0.0
+# numpy>=2.0.0
+# scikit-learn>=1.0.0

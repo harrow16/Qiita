@@ -1,0 +1,88 @@
+
+========================================================================
+     Portfolio Optimization Result - Quantum Computing Version     
+========================================================================
+
+[ Algorithm ]
+  QAOA (Quantum Approximate Optimization Algorithm)
+  Simulator: Qiskit StatevectorSampler
+
+[ Selected Stocks ]
+------------------------------------------------------------------------
+
+[ Stock #1 ]
+  Company Name      : Taiyo Yuden Co., Ltd.
+  Ticker Code       : 6976.T
+  Sector            : Technology
+  Current Price     : 4,160 JPY
+  Units to Buy      : 1 unit
+  Shares to Buy     : 100 shares
+  Investment Amount : 416,000 JPY
+  Expected Return   : 2.99 %
+  Expected Profit   : 12,445 JPY
+
+[ Stock #2 ]
+  Company Name      : Inpex Corporation
+  Ticker Code       : 1605.T
+  Sector            : Energy
+  Current Price     : 4,687 JPY
+  Units to Buy      : 1 unit
+  Shares to Buy     : 100 shares
+  Investment Amount : 468,700 JPY
+  Expected Return   : 2.77 %
+  Expected Profit   : 12,962 JPY
+
+[ Stock #3 ]
+  Company Name      : Tokyo Electric Power Company Holdings, Incorporated
+  Ticker Code       : 9501.T
+  Sector            : Utilities
+  Current Price     : 623 JPY
+  Units to Buy      : 1 unit
+  Shares to Buy     : 100 shares
+  Investment Amount : 62,340 JPY
+  Expected Return   : 2.73 %
+  Expected Profit   : 1,701 JPY
+
+[ Stock #4 ]
+  Company Name      : Sumitomo Chemical Company, Limited
+  Ticker Code       : 4005.T
+  Sector            : Basic Materials
+  Current Price     : 507 JPY
+  Units to Buy      : 1 unit
+  Shares to Buy     : 100 shares
+  Investment Amount : 50,740 JPY
+  Expected Return   : 2.71 %
+  Expected Profit   : 1,377 JPY
+
+------------------------------------------------------------------------
+
+[ Portfolio Summary ]
+------------------------------------------------------------------------
+  Selected Stocks         : 4 stocks
+  Total Shares            : 400 shares
+
+[ Investment Breakdown ]
+  Principal Investment    :      997,780 JPY
+  Trading Fee (0.1%)      :          998 JPY
+  --------------------------------------------------
+  Total Cost              :      998,778 JPY
+  Budget Remaining        :        1,222 JPY
+
+[ Expected Returns (5 Trading Days) ]
+  Expected Total Profit   :       28,486 JPY
+  Net Profit (after fee)  :       27,488 JPY
+  Expected Return Rate    : 2.75 %
+
+[ Constraint Satisfaction ]
+  [OK] Budget constraint (within 1,000,000 JPY)
+  [OK] Stock limit (max 5 stocks, selected 4)
+  [OK] Sector diversity (each stock from different sector)
+
+[ Disclaimer ]
+  * This result is based on quantum computing + machine learning predictions
+  * Investment decisions should be made at your own risk
+  * Past performance does not guarantee future results
+
+========================================================================
+                 Quantum Optimization Completed                    
+========================================================================
