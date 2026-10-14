@@ -6,7 +6,7 @@ LightGBM で予測した株価収益率をもとに、**QAOA / VQE（量子ア�
 | | リンク |
 |---|---|
 | 🔗 元リポジトリ（CPLEX版）| [stock-portfolio-optimization](https://github.com/harrow16/stock-portfolio-optimization) |
-| 📝 技術解説記事（Qiita）| [株価予測 × 量子コンピューター（QAOA）でポートフォリオ最適化してみた]((https://github.com/harrow16/Qiita/tree/main/IBMQ_%236) |
+| 📝 技術解説記事（Qiita）| [IBM Bobを使って、量子コンピュータで「株価のポートフォリオ最適化」にチャレンジしてみた。]((https://qiita.com/harrowharrow16/items/ce760b19f07532eeb1b7) |
 
 ---
 
