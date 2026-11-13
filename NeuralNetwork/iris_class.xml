@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><PMML xmlns="http://www.dmg.org/PMML-4_3" xmlns:xsi="http://www.w3.org/2001/XMLSchema" version="4.3"><Header copyright="(C) Copyright IBM Corp. 1994, 2025">
+<Application name="IBM SPSS Modeler Common" version="19.0.0.0"/>
+<Timestamp>Fri Nov 13 10:43:06 2026</Timestamp>
+</Header><DataDictionary numberOfFields="5">
+<DataField dataType="string" displayName="class" name="class" optype="categorical">
+<Value value="Iris-setosa"/>
+<Value value="Iris-versicolor"/>
+<Value value="Iris-virginica"/>
+</DataField>
+<DataField dataType="double" displayName="petal length" name="petal length" optype="continuous"/>
+<DataField dataType="double" displayName="petal width" name="petal width" optype="continuous"/>
+<DataField dataType="double" displayName="sepal length" name="sepal length" optype="continuous"/>
+<DataField dataType="double" displayName="sepal width" name="sepal width" optype="continuous"/>
+</DataDictionary><TransformationDictionary>
+<DerivedField dataType="double" name="classValue0" optype="categorical">
+<NormDiscrete field="class" value="Iris-setosa"/>
+</DerivedField>
+<DerivedField dataType="double" name="classValue1" optype="categorical">
+<NormDiscrete field="class" value="Iris-versicolor"/>
+</DerivedField>
+<DerivedField dataType="double" name="classValue2" optype="categorical">
+<NormDiscrete field="class" value="Iris-virginica"/>
+</DerivedField>
+<DerivedField dataType="double" name="petal lengthNorm" optype="continuous">
+<NormContinuous field="petal length">
+<LinearNorm norm="-1.46586538248623" orig="1"/>
+<LinearNorm norm="1.6518333787718" orig="6.7"/>
+</NormContinuous>
+</DerivedField>
+<DerivedField dataType="double" name="petal widthNorm" optype="continuous">
+<NormContinuous field="petal width">
+<LinearNorm norm="-1.34050985136666" orig="0.1"/>
+<LinearNorm norm="1.66757993086306" orig="2.5"/>
+</NormContinuous>
+</DerivedField>
+<DerivedField dataType="double" name="sepal lengthNorm" optype="continuous">
+<NormContinuous field="sepal length">
+<LinearNorm norm="-1.70103748484687" orig="4.3"/>
+<LinearNorm norm="2.33532264868807" orig="7.9"/>
+</NormContinuous>
+</DerivedField>
+<DerivedField dataType="double" name="sepal widthNorm" optype="continuous">
+<NormContinuous field="sepal width">
+<LinearNorm norm="-2.21928167345622" orig="2.2"/>
+<LinearNorm norm="3.35910860476342" orig="4.4"/>
+</NormContinuous>
+</DerivedField>
+</TransformationDictionary><NeuralNetwork activationFunction="tanh" algorithmName="MLP" functionName="classification"><Extension extender="spss.com" name="modelID" value="0"/><MiningSchema>
+<MiningField importance="0.306015611383566" name="petal length"/>
+<MiningField importance="0.277847873790185" name="petal width"/>
+<MiningField importance="0.0839076116155508" name="sepal length"/>
+<MiningField importance="0.332228903210699" name="sepal width"/>
+<MiningField name="class" usageType="predicted"/>
+</MiningSchema><Output>
+<OutputField dataType="string" feature="predictedValue" name="$N-class" targetField="class"/>
+<OutputField dataType="double" feature="probability" name="$NP-class" targetField="class"/>
+<OutputField dataType="double" feature="probability" name="$NP-Iris-setosa" targetField="class" value="Iris-setosa"/>
+<OutputField dataType="double" feature="probability" name="$NP-Iris-versicolor" targetField="class" value="Iris-versicolor"/>
+<OutputField dataType="double" feature="probability" name="$NP-Iris-virginica" targetField="class" value="Iris-virginica"/>
+</Output><ModelExplanation><PredictiveModelQuality dataUsage="training" targetField="class"><ConfusionMatrix><ClassLabels><Array n="3" type="string">"Iris-setosa" "Iris-versicolor" "Iris-virginica"</Array></ClassLabels><Matrix><Array n="3" type="int">49 1 0</Array><Array n="3" type="int">0 46 4</Array><Array n="3" type="int">0 0 50</Array></Matrix></ConfusionMatrix><LiftData targetFieldDisplayValue="Iris-setosa" targetFieldValue="Iris-setosa"><ModelLiftGraph><LiftGraph><XCoordinates><Array n="21" type="int">2 9 16 23 30 37 44 51 58 65 72 79 86 93 100 107 114 121 128 135 150</Array></XCoordinates><YCoordinates><Array n="21" type="int">0 0 0 0 0 0 0 1 7 7 7 7 7 6 6 5 7 7 7 7 15</Array></YCoordinates><BoundaryValues><Array n="21" type="real">0.996540185582792 0.996529601666151 0.996517100706674 0.996497998299865 0.996466245531119 0.996348204171182 0.996190178270013 0.19279731129859 0.0114986345320179 0.00621825957559514 0.0050785499247071 0.00375101204095023 0.00292759424673516 0.0017302520147217 0.000383214097064433 0.00013004237909063 5.72205415591109e-05 2.54212158665873e-05 1.74544044631108e-05 1.18645044694076e-05 6.95462495340373e-06</Array></BoundaryValues><BoundaryValueMeans><Array n="21" type="real">0.99654019515248 0.996534622131075 0.996524966899135 0.996508176696368 0.996479743318944 0.996422533939203 0.996249915233392 0.782928930517338 0.0185645586331222 0.00786427539461034 0.00558410637396498 0.00423878573229169 0.00319484371246434 0.00228076857665144 0.000996146161665592 0.000226481842690109 7.94643357865706e-05 3.30049232575679e-05 1.98064556528372e-05 1.42886232989282e-05 9.65451715299343e-06</Array></BoundaryValueMeans></LiftGraph></ModelLiftGraph></LiftData><LiftData targetFieldDisplayValue="Iris-versicolor" targetFieldValue="Iris-versicolor"><ModelLiftGraph><LiftGraph><XCoordinates><Array n="21" type="int">2 9 16 23 30 37 44 51 58 65 72 79 86 93 100 107 114 121 128 135 150</Array></XCoordinates><YCoordinates><Array n="21" type="int">2 7 7 7 7 7 7 3 6 7 7 7 7 7 7 1 0 0 0 0 0</Array></YCoordinates><BoundaryValues><Array n="21" type="real">0.992039870727586 0.991049091047508 0.989332339414972 0.98331775926483 0.976188200790388 0.960675097771282 0.922465986244508 0.288544199146434 0.0640729672716173 0.0375399672176404 0.0148575471091243 0.0116101859174846 0.00891272189904021 0.00723664392609915 0.00642761769536934 0.00380879414627537 0.00365081380292461 0.00353280130097166 0.00350105751643892 0.00348196153475683 0.00345886661213835</Array></BoundaryValues><BoundaryValueMeans><Array n="21" type="real">0.992361638399608 0.991322083320637 0.990164086647192 0.985984020343295 0.979976347314609 0.970690406486754 0.938562252140448 0.495387625089843 0.121293487006088 0.049623454816062 0.020400271090326 0.0132363094722438 0.00993322930971644 0.00782983540672588 0.00691082828028916 0.00448234110404388 0.00372650465029752 0.00355964182416499 0.00351477117705252 0.00348815433295851 0.00346704020028478</Array></BoundaryValueMeans></LiftGraph></ModelLiftGraph></LiftData><LiftData targetFieldDisplayValue="Iris-virginica" targetFieldValue="Iris-virginica"><ModelLiftGraph><LiftGraph><XCoordinates><Array n="21" type="int">2 9 16 23 30 37 44 51 58 65 72 79 86 93 100 107 114 121 128 135 150</Array></XCoordinates><YCoordinates><Array n="21" type="int">2 7 7 7 7 7 7 5 5 7 7 7 7 7 7 0 0 0 0 0 0</Array></YCoordinates><BoundaryValues><Array n="21" type="real">0.993563248348382 0.992753808432273 0.991075619210601 0.988356129296339 0.985122902385531 0.962402812240801 0.935796990349292 0.711072586756502 0.065751546620607 0.021613316447535 0.0127127964064946 0.00594220882542488 0.0041976337480384 0.00211621011482199 0.000785715307117691 1.02758371138538e-06 9.82025893348723e-07 9.55560355855744e-07 9.4418369594756e-07 9.3775856865805e-07 9.28665692773185e-07</Array></BoundaryValues><BoundaryValueMeans><Array n="21" type="real">0.993897543346117 0.992964556622041 0.991918655368164 0.989662826147244 0.986280705980827 0.976323060829708 0.946476294138176 0.846386203319788 0.359707452835851 0.04011033550805 0.0168390807964768 0.00813712877654089 0.00475204056517046 0.00317801752554338 0.00130276516401373 1.69288086586204e-05 1.00498757242698e-06 9.615269905384e-07 9.4905240479354e-07 9.40055414554474e-07 9.32279064686128e-07</Array></BoundaryValueMeans></LiftGraph></ModelLiftGraph></LiftData></PredictiveModelQuality></ModelExplanation><NeuralInputs>
+<NeuralInput id="0">
+<DerivedField dataType="double" optype="continuous">
+<FieldRef field="petal lengthNorm"/>
+</DerivedField>
+</NeuralInput>
+<NeuralInput id="1">
+<DerivedField dataType="double" optype="continuous">
+<FieldRef field="petal widthNorm"/>
+</DerivedField>
+</NeuralInput>
+<NeuralInput id="2">
+<DerivedField dataType="double" optype="continuous">
+<FieldRef field="sepal lengthNorm"/>
+</DerivedField>
+</NeuralInput>
+<NeuralInput id="3">
+<DerivedField dataType="double" optype="continuous">
+<FieldRef field="sepal widthNorm"/>
+</DerivedField>
+</NeuralInput>
+</NeuralInputs><NeuralLayer numberOfNeurons="3">
+<Neuron bias="-1.952156186602" id="4">
+<Con from="0" weight="1.63524086591826"/>
+<Con from="1" weight="1.69202607500018"/>
+<Con from="2" weight="-0.368620439006194"/>
+<Con from="3" weight="-0.394332172983169"/>
+</Neuron>
+<Neuron bias="0.672326703458472" id="5">
+<Con from="0" weight="0.961066704193676"/>
+<Con from="1" weight="0.725056813190881"/>
+<Con from="2" weight="0.744188269304133"/>
+<Con from="3" weight="-1.93454939563185"/>
+</Neuron>
+<Neuron bias="0.426022369035855" id="6">
+<Con from="0" weight="-0.936987592959351"/>
+<Con from="1" weight="-0.846862749302285"/>
+<Con from="2" weight="-0.20728897126586"/>
+<Con from="3" weight="0.614758140205065"/>
+</Neuron>
+</NeuralLayer><NeuralLayer activationFunction="identity" normalizationMethod="softmax" numberOfNeurons="3">
+<Neuron bias="0.315540222577777" id="7">
+<Con from="4" weight="-1.63949201106099"/>
+<Con from="5" weight="-2.50383593866568"/>
+<Con from="6" weight="2.49734079640179"/>
+</Neuron>
+<Neuron bias="0.844845840436693" id="8">
+<Con from="4" weight="-1.80090780169747"/>
+<Con from="5" weight="1.19192521804626"/>
+<Con from="6" weight="-0.161690750885013"/>
+</Neuron>
+<Neuron bias="-0.677592466441299" id="9">
+<Con from="4" weight="3.4229914944065"/>
+<Con from="5" weight="0.767083137839152"/>
+<Con from="6" weight="-2.06342675033851"/>
+</Neuron>
+</NeuralLayer><NeuralOutputs>
+<NeuralOutput outputNeuron="7">
+<DerivedField dataType="double" optype="continuous">
+<FieldRef field="classValue0"/>
+</DerivedField>
+</NeuralOutput>
+<NeuralOutput outputNeuron="8">
+<DerivedField dataType="double" optype="continuous">
+<FieldRef field="classValue1"/>
+</DerivedField>
+</NeuralOutput>
+<NeuralOutput outputNeuron="9">
+<DerivedField dataType="double" optype="continuous">
+<FieldRef field="classValue2"/>
+</DerivedField>
+</NeuralOutput>
+</NeuralOutputs></NeuralNetwork></PMML>
