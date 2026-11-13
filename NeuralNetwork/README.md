@@ -115,7 +115,7 @@ PMML の各要素を Python で実装した対応表です。
 
 Qiita に解説記事を公開しています。ニューラルネットワークの仕組みから PMML の読み方まで、初心者向けに図解で説明しています。
 
-👉 [SPSS Modelerのニューラルネットワークモデルを外部プログラムで実装する（Qiita）](https://qiita.com/harrowharrow16/items/7b50ec14129c73423a94)
+👉 [SPSS Modelerのニューラルネットワークモデルを外部プログラムで実装する（Qiita）](https://qiita.com/your-username/items/xxxxxxxxxxxx)
 
 ## ライセンス
 
@@ -123,4 +123,4 @@ MIT License
 
 ## 作者
 
-harrow16
+your-username
