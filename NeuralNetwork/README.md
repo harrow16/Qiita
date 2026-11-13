@@ -1,4 +1,4 @@
-# iris-spss-nn-python
+# SPSS-NueralNetwork-Python
 
 SPSS Modeler でエクスポートした iris_class.xml（PMML）のニューラルネットワークモデルを Python で再実装したプログラムです。
 
@@ -54,20 +54,13 @@ SPSS Modeler が使えない環境でも、同じ予測精度でモデルを動�
 
 ## 使い方
 
-### 1. リポジトリをクローン
-
-```bash
-git clone https://github.com/your-username/iris-spss-nn-python.git
-cd iris-spss-nn-python
-```
-
-### 2. 実行
+### 1. 実行
 
 ```bash
 python iris_nn_predict.py
 ```
 
-### 3. オプション指定
+### 2. オプション指定
 
 ```bash
 python iris_nn_predict.py --input iris.csv --output result.csv
@@ -115,7 +108,7 @@ PMML の各要素を Python で実装した対応表です。
 
 Qiita に解説記事を公開しています。ニューラルネットワークの仕組みから PMML の読み方まで、初心者向けに図解で説明しています。
 
-👉 [SPSS Modelerのニューラルネットワークモデルを外部プログラムで実装する（Qiita）](https://qiita.com/your-username/items/xxxxxxxxxxxx)
+👉 [SPSS Modelerのニューラルネットワークモデルを外部プログラムで実装する（Qiita）](https://qiita.com/harrowharrow16/items/7b50ec14129c73423a94)
 
 ## ライセンス
 
@@ -123,4 +116,4 @@ MIT License
 
 ## 作者
 
-your-username
+harrow16
